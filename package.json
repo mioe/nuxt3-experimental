@@ -1,0 +1,13 @@
+{
+	"name": "nuxt3-experimental",
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=8"
+	},
+	"scripts": {
+		"dev": "concurrently -p \"[{name}]\" -n \"experimental,vanilla\" -c \"magenta,cyan\" \"cd experimental && pnpm dev\" \"cd vanilla && pnpm dev\""
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.1"
+	}
+}
