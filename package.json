@@ -5,7 +5,9 @@
 		"pnpm": ">=8"
 	},
 	"scripts": {
-		"dev": "concurrently -p \"[{name}]\" -n \"experimental,vanilla\" -c \"magenta,cyan\" \"cd experimental && pnpm dev\" \"cd vanilla && pnpm dev\""
+		"dev": "concurrently -p \"[{name}]\" -n \"experimental,vanilla\" -c \"magenta,cyan\" \"cd experimental && pnpm dev\" \"cd vanilla && pnpm dev\"",
+		"build": "concurrently -p \"[{name}]\" -n \"experimental,vanilla\" -c \"magenta,cyan\" \"cd experimental && pnpm build\" \"cd vanilla && pnpm build\"",
+		"preview": "concurrently -p \"[{name}]\" -n \"experimental,vanilla\" -c \"magenta,cyan\" \"cd experimental && pnpm preview\" \"cd vanilla && pnpm preview\""
 	},
 	"devDependencies": {
 		"concurrently": "^8.2.1"
